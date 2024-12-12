@@ -1,0 +1,63 @@
+.taskList {
+  margin: 20px auto;
+  width: 60%;
+  padding: 10px;
+  background-color:  #3a4b6e;
+  border-radius: 10px;
+}
+
+.taskItem {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+  background-color: #E1D7B7;
+  border-radius: 8px;
+}
+
+.taskName {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.completedTask {
+  text-decoration: line-through;
+  color: gray;
+}
+
+hr {
+  margin: 10px 0;
+}
+
+.taskControls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timerControls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.5);
+ 
+}
+@media (max-width: 600px) {
+  .taskControls {
+    flex-direction: column; /* Stack the controls vertically */
+    align-items: flex-start;
+  }
+
+  .timerControls button {
+    width: 100%; /* Make buttons full-width for better usability */
+  }
+
+  .taskName {
+    font-size: 14px; /* Reduce font size for smaller screens */
+  }
+}

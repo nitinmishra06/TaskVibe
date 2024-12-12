@@ -1,0 +1,78 @@
+body {
+    background-color: #3a4b6e;
+  }
+  
+  .Body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    gap: 10px;
+    margin: 25px auto;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: #3a4b6e;
+    height: 300px; /* Set a fixed height for consistency */
+  }
+  
+  .textBody {
+    flex-grow: 1;
+    border-radius: 15px;
+    box-shadow: 7px 7px 3px black;
+    background-color: #E1D7B7;
+    padding: 10px;
+    resize: none; /* Disable resizing for consistent layout */
+  }
+  
+  .BodyButton {
+    width: 100px;
+    background-color: rgb(97, 173, 240);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 12px;
+    
+    text-align: center;
+    align-self: flex-end; /* Aligns button to the bottom-right corner */
+    cursor: pointer;
+  }
+  
+  .BodyButton:hover {
+    background-color: rgb(77, 143, 200);
+  }
+  .dateTimeDisplay {
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 10px;
+    border-radius: 7px;
+    box-shadow: 7px 7px 3px black;
+    background-color: #E1D7B7;
+}
+
+.totalTimeDisplay {
+
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 10px;
+    border-radius:7px;
+    box-shadow: 7px 7px 3px black;
+    background-color: #E1D7B7;
+}
+
+.dateTimeContainer {
+    display: flex;
+    justify-content: space-between; /* Align date on the left and total time on the right */
+    width: 100%;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+@media (max-width:650px) {
+  .dateTimeContainer{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .totalTimeDisplay{
+    width: 100%;
+  }
+  .dateTimeContainer{
+    width: 100%;
+  }
+}
